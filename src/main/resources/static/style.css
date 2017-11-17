@@ -1,0 +1,16 @@
+navbar-inverse
+{
+    background-color:lightcyan;
+}
+body{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScHWJij-ysI3bNL-Qh70e5XT4KZdfhjOfSINpzGUNUtmUNoGOiPw);
+    background-repeat:no-repeat;
+    height: 100%;
+}
+
+strong{
+    color:cadetblue;
+}
+div{
+    color:lightcoral;
+}

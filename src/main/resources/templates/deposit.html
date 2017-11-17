@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org.thymeleaf-extras-springsecurity4">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script
+            src="http://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+
+    <title><h4>Deposit</h4></title>
+
+</head>
+<body>
+
+<br />
+<div class="container">
+
+    <div th:fragment="navbar" class="navbar  navbar-light bg-faded">
+        <div class="navbar-brand">
+
+            <a class="navbar brand" href="/login"></a>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+                    <li class=""><a href="#"></a></li>
+                    <li class=""><a href="#"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Deposit</button>
+    <label for="accountType">  select  account type</label>
+    <select class="form-control" th:value="${account}" name="accountType" id="accountType" required="required">
+        <option disabled="disabled" selected="selected"> -- select your account type -- </option>
+        <option>Primary</option>
+        <option>Savings</option>
+    </select>
+    <br />
+
+    <div><label>Account Number : <input type="number" name="number"/></label></div>
+    <div><label>Amount : <input type="number" name="$number"/></label></div>
+    <div><input type="submit" value="submit"/></div>
+
+
+
+
+
+    <div th:fragment="footer">
+        <a href="transactiondetails.html"></a>Mi Bank.makes me rich</div>
+</div>
+</body>
+</html>
